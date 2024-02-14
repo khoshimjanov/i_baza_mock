@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../assets/constants/icons.dart';
 import '../../assets/constants/images.dart';
@@ -21,13 +20,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(const Duration(seconds: 3), () {
-        // if (serviceLocator<SharedPreferences>().getBool('wizard') == true) {
-        //   Navigator.of(context)
-        //       .pushNamedAndRemoveUntil('/login', (_) => false);
-        // } else {
-        //   Navigator.of(context)
-        //       .pushNamedAndRemoveUntil('/onBoarding', (_) => false);
-        // }
 
       Navigator.of(context).pushNamedAndRemoveUntil(AppRouteNames.onBoarding, (_) => false);
 
