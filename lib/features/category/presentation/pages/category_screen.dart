@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:ibaza_mock_data/assets/constants/icons.dart';
 import 'package:ibaza_mock_data/features/category/data/model/status.dart';
 import 'package:ibaza_mock_data/features/category/presentation/bloc/category_bloc.dart';
 import 'package:ibaza_mock_data/features/category/presentation/widgets/category_item.dart';
@@ -19,7 +18,6 @@ class CategoryScreen extends StatelessWidget {
         title: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListTile(
                 contentPadding: const EdgeInsets.all(2),
@@ -32,7 +30,6 @@ class CategoryScreen extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
                 ),
               ),
-              // const SizedBox(height: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -51,14 +48,7 @@ class CategoryScreen extends StatelessWidget {
                               child: Icon(Icons.search),
                             ),
                           ),
-                          // suffixIcon: Container(
-                          //   child: GestureDetector(
-                          //     onTap: () {},
-                          //     child: Padding(
-                          //         padding: const EdgeInsets.all(12.0),
-                          //         child: Icon(Icons.search)),
-                          //   ),
-                          // ),
+                      
                           filled: true,
                           fillColor: Color.fromRGBO(243, 242, 245, 1),
                           hintText: "Izlash",
